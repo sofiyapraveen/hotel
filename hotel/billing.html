@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Hotel Management System</title>
+    <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Billing</h1>
+        <form onsubmit="generateBill(event)">
+            <input type="text" id="billCustomerName" placeholder="Customer Name" required>
+            <input type="number" id="roomRent" placeholder="Room Rent" required>
+            <input type="number" id="foodCharges" placeholder="Food Charges" required>
+            <button type="submit">Generate Bill</button>
+        </form>
+        <div id="billDetails"></div>
+    </div>
+    <script src="billing.js"></script>
+</body>
+</html>
